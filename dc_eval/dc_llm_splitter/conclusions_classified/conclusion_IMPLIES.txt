@@ -1,0 +1,18 @@
+# Conclusion: If roses are given out during Breaking Bad, then it is on Monday at 8 pm.
+# Conclusion: If a koala is a quokka, then the koala either loves to sleep or is very fluffy.
+# Conclusion: If Ted is a cow, then Ted is not a pet.
+# Conclusion: If KO is a growth company’s stock or if its price is volatile, then KO is neither a company’s stock nor is its price volatile.
+# Conclusion: If colorectal cancer is a bile duct cancer or a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer and a mild flu.
+# Conclusion: If Harry is either both evil and ugly, or neither evil nor ugly, then Harry is neither kind nor a CEO.
+# Conclusion: If Bonnie is either both a young child or teenager who wishes to further her academic career and educational opportunities and chaperones high school dances or neither is a young child nor teenager who wishes to further her academic career and educational opportunities, then Bonnie is either a student who attends the school or is an inactive and disinterested member of the community.
+# Conclusion: If Rock is cute and still, then Rock is a turtle and skittish.
+# Conclusion: If Subway provides take-out service and receives many negative reviews, then its rating is greater than 9 and it does not provide take-out service.
+# Conclusion: If Rock is not both a turtle and a squirrel, then Rock is either cute or skittish.
+# Conclusion: If Yuri is not an American basketball player, then Yuri is a basketball player.
+# Conclusion: If something is a household appliance, it sucks.
+# Conclusion: If Remy either goes to bed late and wakes up every day after noon or visits the office supply store regularly, then Remy neither spends their free time tidying and organizing the spaces in their home nor has a fully stocked and impressive home office.
+# Conclusion: If George likes music and has access to a program, he will compose.
+# Conclusion: If Tom is not a grumpy person and mean to animals, then Tom is neither a grumpy person nor an Animal Lover.
+# Conclusion: If George will not compose, George can not compose.
+# Conclusion: If colorectal cancer is not a mild flu and a Cholangiocarcinoma, then colorectal cancer is a bile duct cancer or a Cholangiocarcinoma.
+# Conclusion: If Yuri does not wear large shoes, then Yuri is an American basketball player.

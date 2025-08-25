@@ -1,0 +1,5 @@
+# Conclusion: Heinrich Schmidt was either German or Russian.
+# Conclusion: James either takes the database course or has a part-time job offered by the university.
+# Conclusion: Ben is either yellow and ugly or neither yellow nor ugly.
+# Conclusion: A design by Max is either evocative or dreamy.
+# Conclusion: The security deposit at the Olive Garden is either $2000 or more.
