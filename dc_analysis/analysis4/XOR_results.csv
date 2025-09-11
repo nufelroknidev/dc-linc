@@ -1,0 +1,6 @@
+index,reference,neuro_pred,dc_pred,hybrid_pred,neuro_correct,dc_correct,hybrid_correct,result_category
+3,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+10,True,True,True,True,True,True,True,both_correct
+58,True,Uncertain,True,True,False,True,True,hybrid_improves_neuro
+129,False,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+130,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong

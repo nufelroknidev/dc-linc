@@ -1,0 +1,193 @@
+{
+  "overall": {
+    "total_examples": 72,
+    "both_success": {
+      "count": 16,
+      "percent": 22.22
+    },
+    "both_fail": {
+      "count": 29,
+      "percent": 40.28
+    },
+    "neuro_only": {
+      "count": 14,
+      "percent": 19.44
+    },
+    "dc_only": {
+      "count": 13,
+      "percent": 18.06
+    },
+    "neuro_overall": {
+      "count": 30,
+      "percent": 41.67
+    },
+    "dc_overall": {
+      "count": 29,
+      "percent": 40.28
+    }
+  },
+  "by_operator": {
+    "OR": {
+      "total_examples": 7,
+      "both_success": {
+        "count": 1,
+        "percent": 14.29
+      },
+      "both_fail": {
+        "count": 5,
+        "percent": 71.43
+      },
+      "neuro_only": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "dc_only": {
+        "count": 1,
+        "percent": 14.29
+      },
+      "neuro_overall": {
+        "count": 1,
+        "percent": 14.29
+      },
+      "dc_overall": {
+        "count": 2,
+        "percent": 28.57
+      }
+    },
+    "XOR": {
+      "total_examples": 5,
+      "both_success": {
+        "count": 1,
+        "percent": 20.0
+      },
+      "both_fail": {
+        "count": 3,
+        "percent": 60.0
+      },
+      "neuro_only": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "dc_only": {
+        "count": 1,
+        "percent": 20.0
+      },
+      "neuro_overall": {
+        "count": 1,
+        "percent": 20.0
+      },
+      "dc_overall": {
+        "count": 2,
+        "percent": 40.0
+      }
+    },
+    "NOR": {
+      "total_examples": 5,
+      "both_success": {
+        "count": 1,
+        "percent": 20.0
+      },
+      "both_fail": {
+        "count": 2,
+        "percent": 40.0
+      },
+      "neuro_only": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "dc_only": {
+        "count": 2,
+        "percent": 40.0
+      },
+      "neuro_overall": {
+        "count": 1,
+        "percent": 20.0
+      },
+      "dc_overall": {
+        "count": 3,
+        "percent": 60.0
+      }
+    },
+    "IMPLIES": {
+      "total_examples": 18,
+      "both_success": {
+        "count": 3,
+        "percent": 16.67
+      },
+      "both_fail": {
+        "count": 6,
+        "percent": 33.33
+      },
+      "neuro_only": {
+        "count": 5,
+        "percent": 27.78
+      },
+      "dc_only": {
+        "count": 4,
+        "percent": 22.22
+      },
+      "neuro_overall": {
+        "count": 8,
+        "percent": 44.44
+      },
+      "dc_overall": {
+        "count": 7,
+        "percent": 38.89
+      }
+    },
+    "NOT": {
+      "total_examples": 22,
+      "both_success": {
+        "count": 7,
+        "percent": 31.82
+      },
+      "both_fail": {
+        "count": 7,
+        "percent": 31.82
+      },
+      "neuro_only": {
+        "count": 4,
+        "percent": 18.18
+      },
+      "dc_only": {
+        "count": 4,
+        "percent": 18.18
+      },
+      "neuro_overall": {
+        "count": 11,
+        "percent": 50.0
+      },
+      "dc_overall": {
+        "count": 11,
+        "percent": 50.0
+      }
+    },
+    "AND": {
+      "total_examples": 15,
+      "both_success": {
+        "count": 3,
+        "percent": 20.0
+      },
+      "both_fail": {
+        "count": 6,
+        "percent": 40.0
+      },
+      "neuro_only": {
+        "count": 5,
+        "percent": 33.33
+      },
+      "dc_only": {
+        "count": 1,
+        "percent": 6.67
+      },
+      "neuro_overall": {
+        "count": 8,
+        "percent": 53.33
+      },
+      "dc_overall": {
+        "count": 4,
+        "percent": 26.67
+      }
+    }
+  }
+}

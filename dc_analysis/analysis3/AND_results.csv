@@ -1,0 +1,16 @@
+index,reference,neuro_pred,dc_pred,neuro_correct,dc_correct,result_category
+13,False,False,Uncertain,True,False,neuro_only
+18,False,False,False,True,True,both_success
+25,False,False,Uncertain,True,False,neuro_only
+49,Uncertain,False,Uncertain,False,True,dc_only
+50,False,False,Uncertain,True,False,neuro_only
+61,False,Uncertain,Uncertain,False,False,both_fail
+62,Uncertain,True,True,False,False,both_fail
+64,True,True,Uncertain,True,False,neuro_only
+86,False,False,False,True,True,both_success
+101,True,Uncertain,Uncertain,False,False,both_fail
+118,False,True,Uncertain,False,False,both_fail
+127,True,Uncertain,Uncertain,False,False,both_fail
+167,True,Uncertain,Uncertain,False,False,both_fail
+174,True,True,Uncertain,True,False,neuro_only
+179,True,True,True,True,True,both_success

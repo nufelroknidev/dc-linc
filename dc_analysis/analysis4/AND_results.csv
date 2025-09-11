@@ -1,0 +1,16 @@
+index,reference,neuro_pred,dc_pred,hybrid_pred,neuro_correct,dc_correct,hybrid_correct,result_category
+13,False,False,Uncertain,False,True,False,True,hybrid_improves_dc
+18,False,False,False,False,True,True,True,both_correct
+25,False,False,Uncertain,False,True,False,True,hybrid_improves_dc
+49,Uncertain,False,Uncertain,False,False,True,False,hybrid_worse_than_dc
+50,False,False,Uncertain,False,True,False,True,hybrid_improves_dc
+61,False,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+62,Uncertain,True,True,True,False,False,False,all_wrong
+64,True,True,Uncertain,True,True,False,True,hybrid_improves_dc
+86,False,False,False,False,True,True,True,both_correct
+101,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+118,False,True,Uncertain,True,False,False,False,all_wrong
+127,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+167,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+174,True,True,Uncertain,True,True,False,True,hybrid_improves_dc
+179,True,True,True,True,True,True,True,both_correct

@@ -1,0 +1,229 @@
+{
+  "overall": {
+    "total_examples": 72,
+    "neuro_stats": {
+      "correct": 30,
+      "percent": 41.67,
+      "true_false_count": 29,
+      "true_false_percent": 40.28,
+      "uncertain_count": 43,
+      "uncertain_percent": 59.72
+    },
+    "dc_stats": {
+      "correct": 29,
+      "percent": 40.28
+    },
+    "hybrid_stats": {
+      "correct": 40,
+      "percent": 55.56,
+      "neuro_wrong_hybrid_right": 12,
+      "dc_wrong_hybrid_right": 12,
+      "both_wrong_hybrid_right": 0
+    },
+    "improvement": {
+      "over_neuro": 13.89,
+      "over_dc": 15.28
+    },
+    "category_counts": {
+      "all_wrong": 29,
+      "both_correct": 16,
+      "hybrid_improves_neuro": 12,
+      "hybrid_improves_dc": 12,
+      "hybrid_worse_than_neuro": 2,
+      "hybrid_worse_than_dc": 1
+    }
+  },
+  "by_operator": {
+    "OR": {
+      "total_examples": 7,
+      "neuro_stats": {
+        "correct": 1,
+        "percent": 14.29,
+        "true_false_count": 1,
+        "true_false_percent": 14.29,
+        "uncertain_count": 6,
+        "uncertain_percent": 85.71
+      },
+      "dc_stats": {
+        "correct": 2,
+        "percent": 28.57
+      },
+      "hybrid_stats": {
+        "correct": 2,
+        "percent": 28.57,
+        "neuro_wrong_hybrid_right": 1,
+        "dc_wrong_hybrid_right": 0,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 14.29,
+        "over_dc": 0.0
+      },
+      "category_counts": {
+        "all_wrong": 5,
+        "hybrid_improves_neuro": 1,
+        "both_correct": 1
+      }
+    },
+    "XOR": {
+      "total_examples": 5,
+      "neuro_stats": {
+        "correct": 1,
+        "percent": 20.0,
+        "true_false_count": 1,
+        "true_false_percent": 20.0,
+        "uncertain_count": 4,
+        "uncertain_percent": 80.0
+      },
+      "dc_stats": {
+        "correct": 2,
+        "percent": 40.0
+      },
+      "hybrid_stats": {
+        "correct": 2,
+        "percent": 40.0,
+        "neuro_wrong_hybrid_right": 1,
+        "dc_wrong_hybrid_right": 0,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 20.0,
+        "over_dc": 0.0
+      },
+      "category_counts": {
+        "all_wrong": 3,
+        "both_correct": 1,
+        "hybrid_improves_neuro": 1
+      }
+    },
+    "NOR": {
+      "total_examples": 5,
+      "neuro_stats": {
+        "correct": 1,
+        "percent": 20.0,
+        "true_false_count": 2,
+        "true_false_percent": 40.0,
+        "uncertain_count": 3,
+        "uncertain_percent": 60.0
+      },
+      "dc_stats": {
+        "correct": 3,
+        "percent": 60.0
+      },
+      "hybrid_stats": {
+        "correct": 3,
+        "percent": 60.0,
+        "neuro_wrong_hybrid_right": 2,
+        "dc_wrong_hybrid_right": 0,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 40.0,
+        "over_dc": 0.0
+      },
+      "category_counts": {
+        "hybrid_improves_neuro": 2,
+        "all_wrong": 2,
+        "both_correct": 1
+      }
+    },
+    "IMPLIES": {
+      "total_examples": 18,
+      "neuro_stats": {
+        "correct": 8,
+        "percent": 44.44,
+        "true_false_count": 7,
+        "true_false_percent": 38.89,
+        "uncertain_count": 11,
+        "uncertain_percent": 61.11
+      },
+      "dc_stats": {
+        "correct": 7,
+        "percent": 38.89
+      },
+      "hybrid_stats": {
+        "correct": 11,
+        "percent": 61.11,
+        "neuro_wrong_hybrid_right": 4,
+        "dc_wrong_hybrid_right": 4,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 16.67,
+        "over_dc": 22.22
+      },
+      "category_counts": {
+        "all_wrong": 6,
+        "hybrid_improves_dc": 4,
+        "hybrid_improves_neuro": 4,
+        "both_correct": 3,
+        "hybrid_worse_than_neuro": 1
+      }
+    },
+    "NOT": {
+      "total_examples": 22,
+      "neuro_stats": {
+        "correct": 11,
+        "percent": 50.0,
+        "true_false_count": 7,
+        "true_false_percent": 31.82,
+        "uncertain_count": 15,
+        "uncertain_percent": 68.18
+      },
+      "dc_stats": {
+        "correct": 11,
+        "percent": 50.0
+      },
+      "hybrid_stats": {
+        "correct": 14,
+        "percent": 63.64,
+        "neuro_wrong_hybrid_right": 4,
+        "dc_wrong_hybrid_right": 3,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 13.64,
+        "over_dc": 13.64
+      },
+      "category_counts": {
+        "both_correct": 7,
+        "all_wrong": 7,
+        "hybrid_improves_neuro": 4,
+        "hybrid_improves_dc": 3,
+        "hybrid_worse_than_neuro": 1
+      }
+    },
+    "AND": {
+      "total_examples": 15,
+      "neuro_stats": {
+        "correct": 8,
+        "percent": 53.33,
+        "true_false_count": 11,
+        "true_false_percent": 73.33,
+        "uncertain_count": 4,
+        "uncertain_percent": 26.67
+      },
+      "dc_stats": {
+        "correct": 4,
+        "percent": 26.67
+      },
+      "hybrid_stats": {
+        "correct": 8,
+        "percent": 53.33,
+        "neuro_wrong_hybrid_right": 0,
+        "dc_wrong_hybrid_right": 5,
+        "both_wrong_hybrid_right": 0
+      },
+      "improvement": {
+        "over_neuro": 0.0,
+        "over_dc": 26.67
+      },
+      "category_counts": {
+        "all_wrong": 6,
+        "hybrid_improves_dc": 5,
+        "both_correct": 3,
+        "hybrid_worse_than_dc": 1
+      }
+    }
+  }
+}

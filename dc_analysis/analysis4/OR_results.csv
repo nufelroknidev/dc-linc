@@ -1,0 +1,8 @@
+index,reference,neuro_pred,dc_pred,hybrid_pred,neuro_correct,dc_correct,hybrid_correct,result_category
+0,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+60,False,Uncertain,True,True,False,False,False,all_wrong
+82,False,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+94,True,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong
+124,True,Uncertain,True,True,False,True,True,hybrid_improves_neuro
+128,True,True,True,True,True,True,True,both_correct
+165,False,Uncertain,Uncertain,Uncertain,False,False,False,all_wrong

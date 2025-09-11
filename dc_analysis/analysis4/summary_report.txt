@@ -1,0 +1,117 @@
+================================================================================
+HYBRID MODEL ANALYSIS: LINC + DC-LINC
+================================================================================
+
+This report analyzes a hybrid model that uses:
+- LINC (Neurosymbolic) predictions when they are True/False
+- DC-LINC predictions when LINC returns Uncertain
+
+OVERALL RESULTS
+--------------------------------------------------------------------------------
+Total examples analyzed: 72
+
+| Model   | Correct | Accuracy |
+|---------|---------|----------|
+| LINC    | 30/72   | 41.67%   |
+| DC-LINC | 29/72   | 40.28%   |
+| Hybrid  | 40/72   | 55.56%   |
+
+Hybrid model improvement:
+- Over LINC: 13.89%
+- Over DC-LINC: 15.28%
+
+LINC prediction distribution:
+- True/False predictions: 29 (40.28%)
+- Uncertain predictions: 43 (59.72%)
+
+OPERATOR-SPECIFIC RESULTS
+--------------------------------------------------------------------------------
+| Operator | Sample Size | LINC   | DC-LINC | Hybrid | Improvement |
+|----------|-------------|--------|---------|--------|-------------|
+| OR       | 7           | 14.29% | 28.57%  | 28.57% | +14.29%     |
+| XOR      | 5           | 20.0%  | 40.0%   | 40.0%  | +20.0%      |
+| NOR      | 5           | 20.0%  | 60.0%   | 60.0%  | +40.0%      |
+| IMPLIES  | 18          | 44.44% | 38.89%  | 61.11% | +16.67%     |
+| NOT      | 22          | 50.0%  | 50.0%   | 63.64% | +13.64%     |
+| AND      | 15          | 53.33% | 26.67%  | 53.33% | +0.0%       |
+
+DETAILED BREAKDOWN BY OPERATOR
+--------------------------------------------------------------------------------
+
+## OR (n=7)
+- LINC accuracy: 14.29% (1/7)
+- DC-LINC accuracy: 28.57% (2/7)
+- Hybrid accuracy: 28.57% (2/7)
+- LINC True/False rate: 14.29% (1/7)
+- LINC Uncertain rate: 85.71% (6/7)
+- Hybrid improvement over LINC: +14.29%
+- Hybrid improvement over DC-LINC: +0.0%
+- Cases where hybrid recovered from LINC errors: 1
+- Cases where hybrid recovered from DC-LINC errors: 0
+
+
+## XOR (n=5)
+- LINC accuracy: 20.0% (1/5)
+- DC-LINC accuracy: 40.0% (2/5)
+- Hybrid accuracy: 40.0% (2/5)
+- LINC True/False rate: 20.0% (1/5)
+- LINC Uncertain rate: 80.0% (4/5)
+- Hybrid improvement over LINC: +20.0%
+- Hybrid improvement over DC-LINC: +0.0%
+- Cases where hybrid recovered from LINC errors: 1
+- Cases where hybrid recovered from DC-LINC errors: 0
+
+
+## NOR (n=5)
+- LINC accuracy: 20.0% (1/5)
+- DC-LINC accuracy: 60.0% (3/5)
+- Hybrid accuracy: 60.0% (3/5)
+- LINC True/False rate: 40.0% (2/5)
+- LINC Uncertain rate: 60.0% (3/5)
+- Hybrid improvement over LINC: +40.0%
+- Hybrid improvement over DC-LINC: +0.0%
+- Cases where hybrid recovered from LINC errors: 2
+- Cases where hybrid recovered from DC-LINC errors: 0
+
+
+## IMPLIES (n=18)
+- LINC accuracy: 44.44% (8/18)
+- DC-LINC accuracy: 38.89% (7/18)
+- Hybrid accuracy: 61.11% (11/18)
+- LINC True/False rate: 38.89% (7/18)
+- LINC Uncertain rate: 61.11% (11/18)
+- Hybrid improvement over LINC: +16.67%
+- Hybrid improvement over DC-LINC: +22.22%
+- Cases where hybrid recovered from LINC errors: 4
+- Cases where hybrid recovered from DC-LINC errors: 4
+
+
+## NOT (n=22)
+- LINC accuracy: 50.0% (11/22)
+- DC-LINC accuracy: 50.0% (11/22)
+- Hybrid accuracy: 63.64% (14/22)
+- LINC True/False rate: 31.82% (7/22)
+- LINC Uncertain rate: 68.18% (15/22)
+- Hybrid improvement over LINC: +13.64%
+- Hybrid improvement over DC-LINC: +13.64%
+- Cases where hybrid recovered from LINC errors: 4
+- Cases where hybrid recovered from DC-LINC errors: 3
+
+
+## AND (n=15)
+- LINC accuracy: 53.33% (8/15)
+- DC-LINC accuracy: 26.67% (4/15)
+- Hybrid accuracy: 53.33% (8/15)
+- LINC True/False rate: 73.33% (11/15)
+- LINC Uncertain rate: 26.67% (4/15)
+- Hybrid improvement over LINC: +0.0%
+- Hybrid improvement over DC-LINC: +26.67%
+- Cases where hybrid recovered from LINC errors: 0
+- Cases where hybrid recovered from DC-LINC errors: 5
+
+
+KEY OBSERVATIONS
+--------------------------------------------------------------------------------
+- The hybrid model outperforms both individual models.
+- LINC produces uncertain predictions in 59.72% of cases, which the hybrid model replaces with DC-LINC predictions.
+- The hybrid approach is most beneficial for the following operators: NOR, XOR, IMPLIES, OR, NOT.

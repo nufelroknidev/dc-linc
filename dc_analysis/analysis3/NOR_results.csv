@@ -1,0 +1,6 @@
+index,reference,neuro_pred,dc_pred,neuro_correct,dc_correct,result_category
+4,True,Uncertain,True,False,True,dc_only
+74,True,True,True,True,True,both_success
+90,True,False,False,False,False,both_fail
+112,True,Uncertain,Uncertain,False,False,both_fail
+177,True,Uncertain,True,False,True,dc_only

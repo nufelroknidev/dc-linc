@@ -1,0 +1,102 @@
+================================================================================
+COMPARATIVE ANALYSIS: LINC vs DC-LINC ON LOGICAL OPERATORS
+================================================================================
+
+OVERALL RESULTS
+--------------------------------------------------------------------------------
+Total examples analyzed: 72
+
+| Category              | Count | Percentage |
+|-----------------------|-------|------------|
+| Both models correct   | 16    | 22.22%     |
+| Only LINC correct     | 14    | 19.44%     |
+| Only DC-LINC correct  | 13    | 18.06%     |
+| Both models incorrect | 29    | 40.28%     |
+
+| Model                | Correct | Accuracy |
+|----------------------|---------|----------|
+| LINC (Neurosymbolic) | 30/72   | 41.67%   |
+| DC-LINC              | 29/72   | 40.28%   |
+
+
+OPERATOR-SPECIFIC RESULTS
+--------------------------------------------------------------------------------
+| Operator | Sample Size | LINC Accuracy | DC-LINC Accuracy | Diff (DC-LINC - LINC) |
+|----------|-------------|---------------|------------------|-----------------------|
+| OR       | 7           | 14.29%        | 28.57%           | +14.28%               |
+| XOR      | 5           | 20.0%         | 40.0%            | +20.00%               |
+| NOR      | 5           | 20.0%         | 60.0%            | +40.00%               |
+| IMPLIES  | 18          | 44.44%        | 38.89%           | -5.55%                |
+| NOT      | 22          | 50.0%         | 50.0%            | 0.00%                 |
+| AND      | 15          | 53.33%        | 26.67%           | -26.66%               |
+
+DETAILED BREAKDOWN BY OPERATOR
+--------------------------------------------------------------------------------
+
+## OR (n=7)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 1     | 14.29%     |
+| Only LINC correct    | 0     | 0.0%       |
+| Only DC-LINC correct | 1     | 14.29%     |
+| Both incorrect       | 5     | 71.43%     |
+
+
+## XOR (n=5)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 1     | 20.0%      |
+| Only LINC correct    | 0     | 0.0%       |
+| Only DC-LINC correct | 1     | 20.0%      |
+| Both incorrect       | 3     | 60.0%      |
+
+
+## NOR (n=5)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 1     | 20.0%      |
+| Only LINC correct    | 0     | 0.0%       |
+| Only DC-LINC correct | 2     | 40.0%      |
+| Both incorrect       | 2     | 40.0%      |
+
+
+## IMPLIES (n=18)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 3     | 16.67%     |
+| Only LINC correct    | 5     | 27.78%     |
+| Only DC-LINC correct | 4     | 22.22%     |
+| Both incorrect       | 6     | 33.33%     |
+
+
+## NOT (n=22)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 7     | 31.82%     |
+| Only LINC correct    | 4     | 18.18%     |
+| Only DC-LINC correct | 4     | 18.18%     |
+| Both incorrect       | 7     | 31.82%     |
+
+
+## AND (n=15)
+| Category             | Count | Percentage |
+|----------------------|-------|------------|
+| Both correct         | 3     | 20.0%      |
+| Only LINC correct    | 5     | 33.33%     |
+| Only DC-LINC correct | 1     | 6.67%      |
+| Both incorrect       | 6     | 40.0%      |
+
+
+KEY OBSERVATIONS
+--------------------------------------------------------------------------------
+- Overall, LINC slightly outperforms DC-LINC by 1.39% (41.67% vs 40.28%).
+- Operator-specific performance:
+  * OR: DC-LINC performs better by 14.28% (28.57% vs 14.29%).
+  * XOR: DC-LINC performs better by 20.00% (40.0% vs 20.0%).
+  * NOR: DC-LINC performs better by 40.00% (60.0% vs 20.0%).
+  * IMPLIES: LINC performs better by 5.55% (44.44% vs 38.89%).
+  * NOT: Both models perform similarly.
+  * AND: LINC performs better by 26.66% (53.33% vs 26.67%).
+- The models agree on 62.50% of examples (both correct: 22.22%, both incorrect: 40.28%).
+- The models complement each other on 37.50% of examples, suggesting potential benefits from an ensemble approach.
+- The largest performance gap is on NOR operator, where DC-LINC outperforms LINC by 40.00%.
