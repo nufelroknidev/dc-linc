@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "DC-LINC: Operator-Aware Conclusion Decomposition for Neuro-Symbolic FOL Reasoning"
+authors:
+  - family-names: Rokni
+    given-names: Nufel
+version: "1.0.0"
+date-released: "2025"
+license: MIT
+repository-code: "https://github.com/nufelroknidev/dc-linc"
+abstract: >
+  DC-LINC extends the LINC neuro-symbolic pipeline with operator-aware conclusion
+  decomposition. A rule-based detector identifies the top-level logical connective,
+  an LLM splits the conclusion into child sub-goals, Prover9 proves each child
+  independently, and operator-specific three-valued merge rules aggregate the results.
+  A simple fallback ensemble achieves 55.6% accuracy on the FOLIO operator subset,
+  +13.9 pp over the LINC baseline.
+preferred-citation:
+  type: article
+  title: >
+    Operator-Aware Conclusion Decomposition for Neuro-Symbolic FOL Reasoning:
+    Complementary Strengths and a Fallback Ensemble
+  authors:
+    - family-names: Rokni
+      given-names: Nufel
+  year: 2025
+  notes: "arXiv preprint — DOI forthcoming"
