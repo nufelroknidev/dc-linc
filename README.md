@@ -19,14 +19,16 @@ Extends the [LINC](https://arxiv.org/abs/2310.15164) neuro-symbolic pipeline wit
 
 The fallback is purely rule-based: keep LINC when it returns a decisive answer; use DC-LINC when LINC returns Uncertain. DC-LINC and LINC are complementary on **37.5%** of operator-bearing queries — the structural foundation of the gain.
 
-![Results comparison: full FOLIO vs operator subset, with oracle line](docs/figures/results_comparison.png)
+<img src="docs/figures/results_comparison.png" width="700" alt="Results comparison: full FOLIO vs operator subset, with oracle line"/>
 
-![Per-operator accuracy with delta strip](docs/figures/operator_accuracy.png)
+The gain is not uniform — decomposition helps some operators and hurts others:
+
+<img src="docs/figures/operator_accuracy.png" width="700" alt="Per-operator accuracy with delta strip"/>
 
 NOR/XOR gains are large but sample-small (n=5, all True ground-truth labels) — interpret with caution.  
 AND regression is the key failure mode: one Uncertain child drives the full conjunction to Uncertain, overriding LINC's decisive monolithic proofs.
 
-![Complementarity waffle: each square is one query](docs/figures/complementarity.png)
+<img src="docs/figures/complementarity.png" width="700" alt="Complementarity waffle: each square is one query"/>
 
 37.5% of the 72 operator-bearing queries are **complementary** — exactly one system is right. This divergence is what the merged fallback exploits.
 
@@ -36,11 +38,23 @@ AND regression is the key failure mode: one Uncertain child drives the full conj
 
 LINC translates natural-language premises + conclusion to FOL, then calls the Prover9 theorem prover. When the conclusion carries a top-level logical connective, DC-LINC inserts one decomposition layer before the prover:
 
-![DC-LINC pipeline architecture diagram](docs/figures/pipeline.png)
+<img src="docs/figures/pipeline.png" width="700" alt="DC-LINC pipeline architecture diagram"/>
 
 **Operator detection is deterministic** — regex + token cues, no LLM involvement.  
 **Child text extraction** uses the LLM with operator-specific few-shot prompts, stabilised by a 10-trial majority vote.  
 **Quantifier safeguards** prevent splits that would cross binder scopes (e.g. ∀x[P(x) ∧ Q(x)] is treated as atomic).
+
+### Worked examples
+
+Two real FOLIO queries illustrate when decomposition helps and when it hurts:
+
+![DC-LINC worked examples — NOR (DC-LINC wins) and AND (LINC wins)](docs/figures/worked_examples.png)
+
+**NOR (Item 4) — DC-LINC wins:** LINC times out on the full conclusion 7/10 times (Uncertain ✗). DC-LINC splits into "KiKi barks." and "KiKi is a dog.", each returning False by majority vote. NOR merge: all False → **True ✓**.
+
+**AND (Item 13) — LINC wins:** LINC refutes the conjunction monolithically → False ✓ (4/10 decisive). DC-LINC splits into the same two atoms, but neither child reaches a decisive answer alone — both majority-Uncertain. AND merge: any Uncertain → **Uncertain ✗**.
+
+This asymmetry is the structural reason AND is DC-LINC's worst operator (−26.7 pp) while NOR/XOR/OR are its best.
 
 ---
 
@@ -105,7 +119,7 @@ Outputs: per-operator accuracy tables, complementarity breakdown, confusion matr
 
 ## Repository layout
 
-![Repository structure](docs/figures/repo_layout.png)
+<img src="docs/figures/repo_layout.png" width="600" alt="Repository structure"/>
 
 ---
 
