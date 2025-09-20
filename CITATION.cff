@@ -1,12 +1,12 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
-title: "DC-LINC: Operator-Aware Conclusion Decomposition for Neuro-Symbolic FOL Reasoning"
+title: "DC-LINC: Operator-Aware Divide-and-Conquer for Neuro-Symbolic Logical Reasoning"
 authors:
   - family-names: Rokni
     given-names: Nufel
 version: "1.0.0"
-date-released: "2025"
+date-released: "2025-09-15"
 license: MIT
 repository-code: "https://github.com/nufelroknidev/dc-linc"
 abstract: >
@@ -18,9 +18,7 @@ abstract: >
   +13.9 pp over the LINC baseline.
 preferred-citation:
   type: article
-  title: >
-    Operator-Aware Conclusion Decomposition for Neuro-Symbolic FOL Reasoning:
-    Complementary Strengths and a Fallback Ensemble
+  title: "DC-LINC: Operator-Aware Divide-and-Conquer for Neuro-Symbolic Logical Reasoning"
   authors:
     - family-names: Rokni
       given-names: Nufel

@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" width="900" height="760">
+<rect width="900" height="760" fill="white"/>
+<text x="450" y="30" text-anchor="middle" dominant-baseline="hanging"
+      font-family="Arial, Helvetica, sans-serif" font-size="22"
+      font-weight="bold" fill="#1E293B">DC-LINC Pipeline Architecture</text>
+<rect x="175" y="54" width="550" height="52" rx="8" fill="#F0F9FF" stroke="#0EA5E9" stroke-width="2"/>
+<text x="450" y="80" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#1E293B">
+      Natural Language: Premises + Conclusion</text>
+<line x1="450" y1="106" x2="450" y2="126" stroke="#1E293B" stroke-width="2"/>
+<polygon points="450.0,136.0 445.0,126.0 455.0,126.0" fill="#1E293B"/>
+
+<polygon points="450,138 628,187 450,236 272,187" fill="#EDE9FE" stroke="#7C3AED" stroke-width="2"/>
+<text x="450" y="181" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1E293B">
+      Detect top-level operator</text>
+<text x="450" y="197" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="bold" fill="#64748B">
+      (rule-based, 7 types)</text>
+<text x="265" y="181" text-anchor="end" font-family="Arial, Helvetica, sans-serif"
+      font-size="12" font-weight="bold" fill="#1E293B">operator found →</text>
+<text x="635" y="181" text-anchor="start" font-family="Arial, Helvetica, sans-serif"
+      font-size="12" font-weight="bold" fill="#1E293B">← NONE / quantified</text>
+<line x1="272" y1="187" x2="195" y2="187" stroke="#EA580C" stroke-width="2"/>
+<line x1="628" y1="187" x2="705" y2="187" stroke="#2563EB" stroke-width="2"/>
+<line x1="195" y1="187" x2="195" y2="252" stroke="#EA580C" stroke-width="2"/>
+<polygon points="195.0,262.0 190.0,252.0 200.0,252.0" fill="#EA580C"/>
+
+<line x1="705" y1="187" x2="705" y2="252" stroke="#2563EB" stroke-width="2"/>
+<polygon points="705.0,262.0 700.0,252.0 710.0,252.0" fill="#2563EB"/>
+
+<rect x="72" y="256" width="246" height="254" rx="10" fill="#FFF7ED"
+      stroke="#EA580C" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="195" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" font-weight="bold" fill="#1E293B">DC-LINC path</text>
+<rect x="76" y="267" width="238" height="64" rx="8" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.8"/>
+<text x="195" y="290" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#1E293B">
+      1.  Split into child sub-goals</text>
+<text x="195" y="308" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" font-style="italic">
+      LLM extraction · 10-trial consensus vote</text>
+<line x1="195" y1="331" x2="195" y2="341" stroke="#EA580C" stroke-width="2"/>
+<polygon points="195.0,351.0 190.0,341.0 200.0,341.0" fill="#EA580C"/>
+
+<rect x="76" y="353" width="238" height="64" rx="8" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.8"/>
+<text x="195" y="376" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#1E293B">
+      2.  Prove each child independently</text>
+<text x="195" y="394" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" font-style="italic">
+      LLM → FOL → Prover9 · n=10, majority vote</text>
+<line x1="195" y1="417" x2="195" y2="427" stroke="#EA580C" stroke-width="2"/>
+<polygon points="195.0,437.0 190.0,427.0 200.0,427.0" fill="#EA580C"/>
+
+<rect x="76" y="439" width="238" height="64" rx="8" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.8"/>
+<text x="195" y="462" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#1E293B">
+      3.  Merge via 3-valued truth tables</text>
+<text x="195" y="480" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="10" fill="#64748B" font-style="italic">
+      {True, False, Uncertain} x operator rules</text>
+<rect x="582" y="256" width="246" height="254" rx="10" fill="#EFF6FF"
+      stroke="#2563EB" stroke-width="1.3" stroke-dasharray="5,4"/>
+<text x="705" y="250" text-anchor="middle" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" font-weight="bold" fill="#1E293B">LINC direct path</text>
+<rect x="586" y="267" width="238" height="236" rx="8" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.8"/>
+<text x="705" y="375" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#1E293B">
+      LINC: LLM → FOL → Prover9</text>
+<text x="705" y="396" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#64748B" font-style="italic">
+      n=10 samples · majority vote</text>
+<line x1="195" y1="503" x2="195" y2="546" stroke="#EA580C" stroke-width="2"/>
+<line x1="195" y1="546" x2="380" y2="578" stroke="#EA580C" stroke-width="2"/>
+<polygon points="390.0,580.0 379.3,583.2 381.0,573.4" fill="#EA580C"/>
+
+<line x1="705" y1="503" x2="705" y2="546" stroke="#2563EB" stroke-width="2"/>
+<line x1="705" y1="546" x2="520" y2="578" stroke="#2563EB" stroke-width="2"/>
+<polygon points="510.0,580.0 519.0,573.4 520.7,583.2" fill="#2563EB"/>
+
+<rect x="170" y="580" width="560" height="60" rx="8" fill="#F0FDF4"
+      stroke="#16A34A" stroke-width="1.8" stroke-dasharray="8,5"/>
+<text x="450" y="602" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#166534">
+      Merged fallback strategy</text>
+<text x="450" y="621" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#166534" font-style="italic">
+      LINC decisive → keep result  ·  LINC Uncertain → use DC-LINC</text>
+<line x1="450" y1="640" x2="450" y2="648" stroke="#64748B" stroke-width="2"/>
+<polygon points="450.0,658.0 445.0,648.0 455.0,648.0" fill="#64748B"/>
+
+<rect x="180" y="658" width="540" height="56" rx="8" fill="#DCFCE7"
+      stroke="#16A34A" stroke-width="2"/>
+<text x="450" y="686" text-anchor="middle" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#1E293B">
+      Final Label:  True  /  False  /  Uncertain</text>
+<rect x="200" y="728" width="16" height="14" rx="3" fill="#EDE9FE" stroke="#7C3AED" stroke-width="1.5"/>
+<text x="221" y="738" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">Decision point</text>
+<rect x="348" y="728" width="16" height="14" rx="3" fill="#FFEDD5" stroke="#EA580C" stroke-width="1.5"/>
+<text x="369" y="738" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">DC-LINC path</text>
+<rect x="493" y="728" width="16" height="14" rx="3" fill="#DBEAFE" stroke="#2563EB" stroke-width="1.5"/>
+<text x="514" y="738" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">LINC direct path</text>
+<rect x="651" y="728" width="16" height="14" rx="3" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+<text x="672" y="738" dominant-baseline="middle"
+      font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#374151">Output / ensemble</text>
+</svg>
