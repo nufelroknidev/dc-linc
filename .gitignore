@@ -66,6 +66,7 @@ Thumbs.db
 
 # Logs
 logs/
+.logs/
 *.log
 
 # Outputs and data (keep directory with .gitkeep)

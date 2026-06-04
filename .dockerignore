@@ -1,0 +1,29 @@
+# version control
+.git/
+.gitignore
+
+# large output files — mount a volume at /app/linc/outputs instead
+outputs/*.json
+outputs/*.csv
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# environments
+.venv/
+venv/
+conda-env/
+.conda/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# dev / test
+test/
+*.log
